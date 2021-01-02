@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Blog of a little bao',
+  title: 'Bao',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -32,46 +32,20 @@ module.exports = {
    * ref：https://vuepress-theme-reco.recoluan.com/en/views/1.x/blog.html
    */
   themeConfig: {
+    type: 'blog',
     blogConfig: {
       socialLinks: [
-        { icon: 'reco-github', link: 'https://github.com/shigedangao' }
+        { icon: 'reco-github', link: 'https://github.com/shigedangao' },
+        { icon: 'reco-linkedin', link: 'https://www.linkedin.com/in/marcintha/' }
       ]
-    }
+    },
+    nav: [
+      { text: 'About', link: '/about', icon: 'reco-faq'}
+    ],
+    noFoundPageByTencent: false,
+    authorAvatar: '/avatar.png',
+    lastUpdated: 'Last Updated'
   },
-  // themeConfig: {
-  //   repo: '',
-  //   editLinks: false,
-  //   docsDir: '',
-  //   editLinkText: '',
-  //   lastUpdated: false,
-  //   nav: [
-  //     {
-  //       text: 'Guide',
-  //       link: '/guide/',
-  //     },
-  //     {
-  //       text: 'Code',
-  //       link: '/code/'
-  //     },
-  //     {
-  //       text: 'VuePress',
-  //       link: 'https://v1.vuepress.vuejs.org'
-  //     }
-  //   ],
-  //   sidebar: {
-  //     '/guide/': [
-  //       {
-  //         title: 'Guide',
-  //         collapsable: false,
-  //         children: [
-  //           '',
-  //           'using-vue',
-  //         ]
-  //       }
-  //     ],
-  //   }
-  // },
-
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
