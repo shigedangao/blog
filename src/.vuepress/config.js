@@ -42,9 +42,9 @@ module.exports = {
     nav: [
       { text: 'About', link: '/about', icon: 'reco-faq'}
     ],
+    logo: '/avatar.png',
     noFoundPageByTencent: false,
     authorAvatar: '/avatar.png',
-    lastUpdated: 'Last Updated'
   },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
@@ -52,5 +52,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/last-updated'
   ]
 }
