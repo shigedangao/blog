@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Bao',
+  title: 'Shigedangao',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -42,9 +42,9 @@ module.exports = {
     nav: [
       { text: 'About', link: '/about', icon: 'reco-faq'}
     ],
-    logo: '/avatar.png',
+    logo: '/avatar.jpg',
     noFoundPageByTencent: false,
-    authorAvatar: '/avatar.png',
+    authorAvatar: '/avatar.jpg',
   },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
