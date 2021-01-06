@@ -1,7 +1,9 @@
 name: deploy
 
-# @todo to change
-on: push 
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   # build the blog
