@@ -30,9 +30,9 @@ As a result there was a need to "track the state" of the kubernetes cluster.
 
 As a newcomer in the DevOps & the Kubernetes world. I didn't really had any idea on how to store the state of the cluster. Thankfully after extensive research. I founded out that DevOps use tools called Infrastructure as Code.
 
-From my understanding it's a way of storing the state of the server/clusters throughout code. Usually, this code is stored on a repository such as Git. There are many IaC that exist, and each of them has their pros and cons. At that time I focus on IaC which was targeting the Kubernetes environment. 
+From my understanding it's a way of storing the state of the server/clusters throughout code. Usually, this code is stored on a repository such as Git. There are many templating tool that exist, and each of them has their pros and cons. At that time I focus on templating tool which was targeting the Kubernetes environment. 
 
-In the end I came up with these lists of IaC: 
+In the end I came up with these lists of templating tool: 
 
 - Kustomize
 - Helm
@@ -59,7 +59,7 @@ Maybe Kubernetes wasn't the right tool at this time. But hey, it was already her
 
 ## Helm V2
 
-Helm V2 was the most used IaC on the kubernetes world. Like any solutions. It has pros and cons. The most important weaknesses were the tiller. The tiller is a component which run inside the kubernetes cluster. It has the responsibility to install the helm charts and maintain the history of these charts.
+Helm V2 was the most used templating tool on the kubernetes world. Like any solutions. It has pros and cons. The most important weaknesses were the tiller. The tiller is a component which run inside the kubernetes cluster. It has the responsibility to install the helm charts and maintain the history of these charts.
 
 Aside from the security issues that arise by installing the tiller. There are other like HA issue with the tiller which made the choice of Helm V2 less likely. Because of multiples issues there was some article that even do not recommended to use Helm. For instance: [article](https://medium.com/virtuslab/think-twice-before-using-helm-25fbb18bc822)
 
